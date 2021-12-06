@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <style>
+
+            * {
+                color: white;
+                background-color: black;
+                font-family: 'Roboto', sans-serif;
+            }
+            .hero {
+                background-image: url("assets/img/image1.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;    
+                background-position: center;  
+                background-attachment: fixed; 
+                height: 500px;    
+            }
+
+
+            /* How would i code these 3 elements to stay centered while window size changes? */
+            .name {
+                display: inline-block;
+                position: relative;
+                top: 35%;
+                left: 45%;
+                border: solid;
+                border-color: black;
+                border-radius: 0px;
+                padding-left: 5px;
+                padding-right: 5px;
+                
+            }
+
+            .txt {
+                display: inline-block;
+                position: relative;
+                top: 45%;
+                left: 33%;
+                padding: 4px 10px;
+            }
+
+            .sociallinks {
+                display: inline-block;
+                position:relative;
+                top: 55%;
+                left: 23%;
+                font-size: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .sociallinks a {
+                text-decoration: none;
+            }
+
+            .sociallinks a:hover{
+	            color:blue;
+            
+            }
+
+            /* About me section */
+            .am {
+                display: flex;
+                width: 100vw;
+                height: 15vh;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                border-bottom: solid;
+                border-color: white;
+            }
+        
+            .flexcontainer {
+                display: flex;
+            }
+
+            .image {
+                flex: 1;
+                background-image: url("assets/img/who.jpeg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 400px;
+            }
+
+            .sum {
+                flex: 1;
+            }
+
+
+            /* Skill title */
+            .intro {
+                padding-top: 10px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            
+            .skilltitle {
+                display: flex;
+                width: 100vw;
+                height: 15vh;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                border-top: solid;
+                border-bottom: solid;
+                border-color: white;
+            }
+
+            /* Skills */
+            .flexcontainer2 {
+                display: flex;
+            }
+
+            .web1 {
+                background-image: url("assets/img/Front.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 250px;
+                border: solid;
+            }
+
+            .para1 {
+                padding: 10px 10px 40px 10px;
+                border-right: solid;
+            }
+
+            .web2 {
+                background-image: url("assets/img/back.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 250px;
+                border: solid;
+            }
+
+            .para2 {
+                padding: 10px 10px 40px 10px;
+            }
+
+            .skill1 {
+                flex: 1;
+            }
+
+            .skill2 {
+                flex: 1;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- NavBar + Logo will be on all Pages -->
+        <section>
+            <div class="logo">
+                <h2><a href="index.html">JC</a></h2>
+            </div>
+            <nav class="head">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <!-- Hero Page -->
+        <div class="hero">
+            <h2 class="name">Johnny Chen</h2>
+            <p class="txt">Aspiring Web Developer</p>
+            <!-- Navs to socialmedias + Linked Icons -->
+            <div class="sociallinks">
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a>
+                    <a href="mailto:johnnychen384@gmail.com" class="fa fa-google" target="blank"></a>
+                    <a href="https://www.facebook.com" class="fa fa-facebook" target="blank"></a>
+            </div>
+        </div>
+
+
+        <!-- About section -->
+        <div>
+            <h2 class="am">About Me</h2>
+        </div>
+
+
+        <div class="flexcontainer">
+            <!-- Container for IMG of me -->
+            <div class="image">
+            </div>
+            <!-- Background -->
+            <div class="sum">
+                <h3 class="intro">Hello, I am Johnny Chen</h3>
+                <p>Currently I am a computer information tech degree major thats developing front end and back end web development skills through a different program. I am currently also managing a business at the same time and working a job in healthservices. I am trying to finish my current college degree and obtain a bachelors in the same field. At the moment i am looking for a web development job to gain experience and further improve my coding skills.</p>
+            </div>
+        </div>
+
+        <div class="skilltitle">
+            <p>Skills</p>
+        </div>
+        <div class="flexcontainer2">
+            <!-- Skill1 -->
+            <div class="skill1">
+                <div class="web1"></div>
+                <p class="para1">Obtained from a citytech certificate program, i have learned to use html,css,and javascript with some experience in the bootstrap framework to help me build and design web pages.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+            <!-- Skill2 -->
+            <div class="skill2">
+                <div class="web2"></div>
+                <p class="para2">Also obtained from the same citytech certificate program, I have learned how to use MySQL and PHP to create a database and manage it.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1437px;
+  margin: 0;
+}
+
+section {
+  color: white;
+  background-color: black;
+  padding: 6px 8px;
+  opacity: .85;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.logo {
+  font-size: 35px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  padding-left: 10px;
+}
+
+.logo a:hover {
+  color: blue;
+}
+
+.head {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.head ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.head li {
+  display: inline-block;
+}
+
+.head a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 10px;
+  background-color: grey;
+  border: solid;
+  border-color: lightgrey;
+  border-radius: 10px;
+  color: white;
+}
+
+.head a:hover {
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
